@@ -63,7 +63,21 @@ Kemudian Buat Folder untuk mkdocs
 ```ts
 mkdocs new mydocumentation
 ```
+Kemudian ubah konfigurasi **mkdocs.yaml**
 
+```yaml
+site_name: IT Documentation
+
+nav:
+    - Introduction: 'index.md'
+    - Tutorial :
+        - Membuat Dokumentasi : int_createdocs.md 
+theme : readthedocs   
+plugins:
+    - search 
+    - mermaid2
+
+```
 Setelah selesai jalankan Mkdocs 
 
 ```bash
@@ -79,3 +93,4 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:58] Start watching changes
 [I 160402 15:50:43 handlers:60] Start detecting changes
 ```
+
