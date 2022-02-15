@@ -10,11 +10,13 @@
 ## Aplikasi Yang digunakan
 
 Untuk membuat  markdown bisa menggunakan editor 
+
 * Stackedit : [https://stackedit.io/](https://stackedit.io/) 
 * Typora : [https://typora.io/](https://typora.io/)
 * VisualStudio Code : [https://code.visualstudio.com/](https://code.visualstudio.com/)
   * Plugin : _MarkdownAllInOne_
   * Plugin : _Markdown Preview Enhanced_
+
 
 **Element	Markdown**
 
@@ -42,3 +44,38 @@ Image	![alt text](image.jpg)
 
 ## Menggunakan Mkdocs
 
+**Keterangan**
+
+Mkdocs merupakan site generator khusus untuk _Markdown_ File. Biasa digunakan untuk membangun dokumentasi proyek, dokumentasi source file, dan sebagainya.
+
+Mkdocs menggabunggkan beberapa file markdown ( .md ), menjadi 1 site. dliengkapi dengan plugin Mermaid untuk flowchart, dan sebagainya.
+
+**Instalasi**
+
+Install menggunakan PIP
+
+```bash
+sudo pip install mkdocs
+
+```
+Kemudian Buat Folder untuk mkdocs
+
+```ts
+mkdocs new mydocumentation
+```
+
+Setelah selesai jalankan Mkdocs 
+
+```bash
+mkdocs serve 
+```
+
+Nanti akan keluar tampilan seperti ini
+
+```bash
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
+[I 160402 15:50:43 handlers:58] Start watching changes
+[I 160402 15:50:43 handlers:60] Start detecting changes
+```
