@@ -1,0 +1,10 @@
+site_name: IT Documentation
+
+nav:
+    - Introduction: 'index.md'
+    - Tutorial :
+        - Membuat Dokumentasi : int_createdocs.md 
+theme : readthedocs   
+plugins:
+    - search 
+    - mermaid2
