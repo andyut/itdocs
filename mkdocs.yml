@@ -4,6 +4,8 @@ nav:
     - Introduction: 'index.md'
     - Tutorial :
         - Membuat Dokumentasi : int_createdocs.md 
+    - Program Update : 
+        - Integration Efaktur : 'efaktur.md'
 theme : readthedocs   
 plugins:
     - search 
