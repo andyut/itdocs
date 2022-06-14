@@ -15,9 +15,10 @@
 
 **Server**
 
+Setting Path server di ```CNW INVAR-Configuration-Setting```
 
-1. Jalankan update file list ke CNW, untuk data list file terupdate
-2. Sync dengan cnw-invoice-list, berdsasarkan no faktur pajak vs nama file faktur pajak
+1. Jalankan update file list ke CNW, untuk data list file terupdate ```CNW INVAR-Configuration-FP Scan```
+2. Sync dengan cnw-invoice-list, berdsasarkan no faktur pajak vs nama file faktur pajak ```CNW INVAR-Configuration-FP Update```
 
 
 **Cara User akses Efaktur**
