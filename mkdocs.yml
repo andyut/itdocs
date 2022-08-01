@@ -7,7 +7,7 @@ nav:
     - Program Update : 
         - Integration Efaktur : efaktur.md
         - Integration SAP : cnwls.md
-theme : semantic   
+theme : united   
 plugins:
     - search 
     - mermaid2
