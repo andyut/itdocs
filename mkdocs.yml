@@ -6,7 +6,7 @@ nav:
         - Membuat Dokumentasi : int_createdocs.md 
     - Program Update : 
         - Integration Efaktur : efaktur.md
-theme : readthedocs   
+theme : semantic   
 plugins:
     - search 
     - mermaid2
