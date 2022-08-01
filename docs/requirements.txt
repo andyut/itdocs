@@ -1,4 +1,4 @@
 mkdocs-mermaid2-plugin
 mkdocs-rtd-dropdown
 mkdocs-bootswatch
-mkdocs-pdf-export-plugin
+mkpdfs-mkdocs

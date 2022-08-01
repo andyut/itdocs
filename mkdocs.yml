@@ -11,4 +11,7 @@ theme : united
 plugins:
     - search 
     - mermaid2
-    - pdf-export
+    - mkpdfs
+        company: Indoguna Utama PT 
+        author : Andy Utomo
+
