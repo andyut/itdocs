@@ -1,2 +1,3 @@
 mkdocs-mermaid2-plugin
 mkdocs-rtd-dropdown
+mkdocs-semantic
