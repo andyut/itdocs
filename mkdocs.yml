@@ -3,6 +3,7 @@ site_name: IT Documentation
 nav:
     - Introduction: 'index.md'
     - Tutorial :
+        - Technical Environment : it_technical.md
         - Membuat Dokumentasi : int_createdocs.md 
     - Program Update : 
         - Integration Efaktur : efaktur.md
