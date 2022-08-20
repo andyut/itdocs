@@ -43,9 +43,9 @@
 * Pihak perijinan menyesuaikan HS Item , dan negara yang akan diajukan. 
 * Setelah tersimpan dokumen pengajuan akan berubah dari ``Start Progress`` menjadi ``on Progress`` dan dokumen penerbitan ijin statusnya menjadi ```Process```, dan persentase proses mulai dihitung dari 
 
-```math
-\left(\frac{ 1} {([Jumlah Task] + 1 )}  \times 100 \right)
-```
+
+$\left(\frac{ 1} {([Jumlah Task] + 1 )}  \times 100 \right)$
+
 
 * Pihak Perijinan akan mengupload setiap dokumen _rekom_ yang sudah jadi, jika semua sudah komplit, status akan berubah menjadi ``Complete``
 * Setelah dokumen berubah menjadi ``Complete`` akan muncul tombol ``[DONE]`` Untuk closed dokumen tersebut, sehingga dokumen tersebut tidak bisa diubah.
