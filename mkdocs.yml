@@ -6,6 +6,7 @@ nav:
         - Technical Environment : it_technical.md
         - Membuat Dokumentasi : int_createdocs.md 
         - Restart Program Pendukung SAP : restart_server.md 
+        - Proses PI  : pi_manual.md 
     - Program Update : 
         - Integration Efaktur : efaktur.md
         - Integration SAP : cnwls.md
