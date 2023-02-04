@@ -1,4 +1,3 @@
 mkdocs-mermaid2-plugin
-weasyprint
+mkdocs-pdf-export-plugin
 mkdocs-windmill
-mkpdfs-mkdocs
