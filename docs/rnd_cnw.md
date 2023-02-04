@@ -9,6 +9,7 @@
 * execute generate pdf  / excel di button odoo 
 
 ___sample___
+
 ![jasperreport](img/jasper.png) 
 
 _issue_ : saat generate, odoo close ( hang )
