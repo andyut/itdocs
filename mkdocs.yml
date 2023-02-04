@@ -15,4 +15,5 @@ theme : windmill
 plugins:
     - search 
     - mermaid2
-    - with-pdf
+    - with-pdf  
+    - pdf-export
