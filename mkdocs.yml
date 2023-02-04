@@ -10,6 +10,7 @@ nav:
     - Program Update : 
         - Integration Efaktur : efaktur.md
         - Integration SAP : cnwls.md
+        - research & development : rnd_cnw.md
 theme : united   
 plugins:
     - search 
