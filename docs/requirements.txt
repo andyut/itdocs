@@ -1,4 +1,3 @@
 mkdocs-mermaid2-plugin 
 mkdocs-pdf-export-plugin
 mkdocs-material
-mkdocs-windmill
