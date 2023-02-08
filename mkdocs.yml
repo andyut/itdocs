@@ -6,6 +6,7 @@ nav:
         - Restart Program Pendukung SAP : restart_server.md 
     - Program Update : 
         - research & development : rnd_cnw.md
+        - AR Invoice : arinv.md
 theme : 
     name : material
     logo : asset/logocnw1.png
