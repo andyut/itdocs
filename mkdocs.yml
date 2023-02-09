@@ -1,4 +1,7 @@
 site_name: IT Technical Documentation
+site_description : System Documentation
+site_author : Andy Utomo
+copyright : "@2023 Indoguna Utama"
 
 nav:
     - Tutorial :
@@ -16,7 +19,8 @@ theme :
         primary: teal
 plugins:
     - search    
-    - mermaid2
+    - mermaid2 
     - pdf-export:
         combined: false
         media_type: print
+    - with-pdf
