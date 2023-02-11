@@ -1,11 +1,11 @@
 # Perbaikan Sistem AR - Invoice
 
----
 
 ## Sebelum
----
+
 
 ### ALUR 
+
 
 **Admin DO**
 
@@ -37,10 +37,8 @@
 
 
 
----
-
 ## Perbaikannya
----
+
 
 ### ALUR  
 
