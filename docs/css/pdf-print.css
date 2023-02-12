@@ -3,7 +3,7 @@
 */ 
 /* fixed for `base.css` of mkdocs v1.0.4 */
 code, pre code {
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace !important;
+    font-family: "Courier New",monospace !important;
 }
 
 @media print {
