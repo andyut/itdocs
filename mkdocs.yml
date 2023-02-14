@@ -15,6 +15,8 @@ nav:
         - Faktur pajak - AR  : efaktur.md
         - AR Invoice : arinv.md
         - Online (Tokopedia) : onlineshop.md
+        - Pembelian non barang dagang (expense) : pembelian_expense.md
+    
 theme : 
     name : material
     logo : asset/logocnw1.png
