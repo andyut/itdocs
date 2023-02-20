@@ -18,6 +18,7 @@ nav:
         - Pembelian non barang dagang (expense) : pembelian_expense.md
     - SAP Update table :
         - table SAP 20230218 : 20230218.md
+        - Create invoice (SL) : 20230220.md
 theme : 
     name : material
     logo : asset/logocnw1.png
