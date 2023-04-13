@@ -136,6 +136,7 @@ Setiap company membuat PO, WMS akan menarik PO tersebut sebagai draft Receiving 
 Setiap company membuat SO, WMS akan menarik SO tersebut sebagai draft Delivery Order di WMS.setelah setelah Picking, akan dikirim kembali ke SAP Company bersangkutan sebagai Delivery Order
 
 
+![struktur bin location](img/wms10.excalidraw.svg)
 
 
 ### Tahapan implementasi
