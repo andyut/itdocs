@@ -16,7 +16,8 @@ nav:
         - AR Invoice : arinv.md
         - Online (Tokopedia) : onlineshop.md
         - Pembelian non barang dagang (expense) : pembelian_expense.md
-        - WMS Di SAP : wms01.md
+        - WMS Di SAP : wms01.md       
+        - SETUP WMS  SAP : wms02.md
     - SAP Update table :
         - table SAP 20230218 : 20230218.md
         - Create invoice (SL) : 20230220.md
