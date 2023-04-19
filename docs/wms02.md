@@ -54,5 +54,41 @@ Skema Warehouse Indoguna
 | Gudang Balikpapan | I1 |
 | Gudang Palembang | J1 |
 
+**[Gate]**
+
+format code 
+* G01 s/d G12
+* F01 s/d F20
+* ARB - ARD (anteroom )
+
+**[Rack]**
+
+format Code : R01 - R24
+
+**[Row]**
+
+format Code : 01 - 33
 
 
+**[Bin]**
+
+format Code : A1 - G2
+
+**[Format Code Bin Location]**
+
+example : Pondok Bambu Gdg Baru gate 01 Rack 01 
+
+    A1G01-R01-01-A1
+    A1G01-R01-01-A2
+    A1G01-R01-01-B1
+    A1G01-R01-02-A1
+    A1ARB-R01-00-00
+
+
+example : Palembang gate F02 Rack 02
+
+    J1F02-R02-01-A1
+    J1F02-R02-01-A2
+    J1F02-R02-01-B1
+    J1F02-R02-02-A1
+    J1ARC-R00-00-00
