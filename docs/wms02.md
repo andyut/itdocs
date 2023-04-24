@@ -149,11 +149,22 @@ Membuat modul CNWLS-WMS
 
 Dengan Model utama sebagai berikut : 
 
+**Mater**
 
 * CNWLS_WMS_Location  : Mapping dengan ```Location Table``` di B1
 * CNWLS_WMS_Warehouse : Mapping dengan ```OWHS - Warehouse``` B1
 * CNWLS_WMS_Gate : Mapping dengan Level 1 Bin location
+
+
+**Transaksi** 
+
+
 * CNWLS_WMS_Bin : Mapping dengan bin location SAP B1 
 * CNWLS_WMS_Bin_ItemSummary :  Mapping dengan bin location COntent
 * CNWLS_WMS_Bin_ItemDetail : Sesuai dengan format Racking saat ini
-* 
+
+
+ 
+
+![schema setting WMS](img/wms12.excalidraw.png)
+
