@@ -32,6 +32,8 @@ Skema Warehouse Indoguna
 | Gudang Balikpapan | I |
 | Gudang Palembang | J |
 
+
+![WMS location](img/wms_location.png)
 <br/>
 
 **[warehouse]**
@@ -54,6 +56,8 @@ Skema Warehouse Indoguna
 | Gudang Balikpapan | I1 |
 | Gudang Palembang | J1 |
 
+
+![ WMS](img/wms_master.png)
 **[Gate]**
 
 format code 
@@ -76,7 +80,7 @@ format Code : A1 - G2
 
 **[Format Code Bin Location]**
 
-example : Pondok Bambu Gdg Baru gate 01 Rack 01 
+Contoh : Pondok Bambu Gdg Baru gate 01 Rack 01 
 
     A1G01-R01-01-A1
     A1G01-R01-01-A2
@@ -85,7 +89,7 @@ example : Pondok Bambu Gdg Baru gate 01 Rack 01
     A1ARB-R01-00-00
 
 
-example : Palembang gate F02 Rack 02
+Contoh : Palembang gate F02 Rack 02
 
     J1F02-R02-01-A1
     J1F02-R02-01-A2
@@ -94,3 +98,62 @@ example : Palembang gate F02 Rack 02
     J1ARC-R00-00-00
 
 
+![schema setting WMS](img/wms-bin.png)
+
+**SAP Module**
+
+Modul yang digunakan untuk WMS 
+
+* Good Receipt : Untuk penerimaan barang ke bin location
+* Good Issue : Untuk mengeluarkan barang dari bin locatio
+* Inventory Transfer : Pindah Antar Bin
+* Stock counting ( Posting ) : Update Quantity per bin location
+
+
+Tambahan ```UDF``` Untuk SAP :
+
+**Good Receipt dan Good Issue**
+
+* Company Consignee : Company Asal barang ( SAP B1 Database )
+* BP : Untuk dokumen Receive atau Issue 
+
+    Informasi lain sudah ada di standar UDF
+
+**Bin Location**
+* Status Booking
+
+
+## SETUP CNW-LS WMS
+
+**ODOO-COMPANY SETTING**
+
+Menambahkan Tab baru untuk konfigurasi database SAP WMS
+
+field :
+* wns_sap_user : Char
+* wms_sap_pass : Char
+* wms_sap_db : Char
+* wms_sap_sl : URL service Layer WMS
+
+inherit from _res_company_
+
+
+
+
+![schema setting WMS](img/wms11.excalidraw.png)
+
+
+**CNWLS-WMS**
+
+Membuat modul CNWLS-WMS
+
+Dengan Model utama sebagai berikut : 
+
+
+* CNWLS_WMS_Location  : Mapping dengan ```Location Table``` di B1
+* CNWLS_WMS_Warehouse : Mapping dengan ```OWHS - Warehouse``` B1
+* CNWLS_WMS_Gate : Mapping dengan Level 1 Bin location
+* CNWLS_WMS_Bin : Mapping dengan bin location SAP B1 
+* CNWLS_WMS_Bin_ItemSummary :  Mapping dengan bin location COntent
+* CNWLS_WMS_Bin_ItemDetail : Sesuai dengan format Racking saat ini
+* 
