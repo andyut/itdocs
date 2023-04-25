@@ -1,15 +1,16 @@
+
 @page {
     size: a4 portrait;
     margin: 25mm 10mm 25mm 10mm;
     counter-increment: page;
-    font-family:"Courier New",monospace,Helvetica,Arial,sans-serif;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
     white-space: pre;
     color: grey;
     @top-left {
-        content: string(chapter);
+        content: '© 2023 Indoguna Utama';
     }
-    @bottom-center {
-        content: '@2023 Indoguna Utama';
+    @top-center {
+        content: string(chapter);
     }
     @top-right {
         content: 'Page ' counter(page);
