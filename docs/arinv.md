@@ -17,11 +17,12 @@
 
 * Membuat invoice berdasarkan dokumen yang diberikan dari bagian admin
 * setelah selesai, bagian invoice akan print dokumen tersebut untuk digabungkan dengan dokumen lain
-    * _jika status print invoice aktif_
+  
+  * _jika status print invoice aktif_
 
 **Admin Invoice**
-* Menggabungkan semua dokumen terkait ( ```invoice checklist```)
-* memberikan ke bagian kwitansi
+* Menggabungkan semua dokumen terkait ( ```invoice PO DO```)
+* memberikan ke bagian admin invoice
 
 **Admin Kwitansi**
 
@@ -35,7 +36,7 @@
 * Menyiapkan dokumen untuk diturunkan ke bagian AR
 * Menurutkan dokumen ke bagian AR
 
-
+![skema1](img/arinv001.excalidraw.png)
 
 ## Perbaikannya
 
@@ -52,7 +53,7 @@
   * Status print kwitansi ( Y / N)
   * _```Status Cetakan Kwitansi ( per Code Customer / Per Outlet )```_
 
-
+![skema2](img/arinv002.excalidraw.png)
 
 **Admin DO**
 
