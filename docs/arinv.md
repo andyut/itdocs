@@ -7,36 +7,54 @@
 ### ALUR 
 
 
-**Admin DO**
+![skema1](img/arinv001.excalidraw.png)
 
-* Menerima dokumen DO dari bagian admin gudang
-* cek semua kelengkapan dokumen untuk syarat tagih
-* Check list di sistem kelengkapan tersebut (```cnw-dolist```)
+ 
 
-**Invoice**
+**[1] Invoice**
 
 * Membuat invoice berdasarkan dokumen yang diberikan dari bagian admin
-* setelah selesai, bagian invoice akan print dokumen tersebut untuk digabungkan dengan dokumen lain
+* setelah selesai, bagian invoice akan print dokumen tersebut untuk digabungkan dengan dokumen lain ( PO, DO)
   
-  * _jika status print invoice aktif_
+    * _jika status print invoice aktif_
 
-**Admin Invoice**
-* Menggabungkan semua dokumen terkait ( ```invoice PO DO```)
-* memberikan ke bagian admin invoice
+**[2] Admin**
 
-**Admin Kwitansi**
 
-* membuat dan print kwitansi
-* print list kwitansi
-* Serahkan kembali dokumen plus kwitansi
+* Cek kelengkapan invoice (DO PO)
+* Validasi dengan update status didalam ```sistem```  ( _Invoice checklist_ )
 
-**Admin Invoice**
 
-* Stampel dan cek ulang kelengkapan dokumen
-* Menyiapkan dokumen untuk diturunkan ke bagian AR
-* Menurutkan dokumen ke bagian AR
+**[3] Admin Kwitansi**
 
-![skema1](img/arinv001.excalidraw.png)
+* Menerima dokumen invoice
+* Print Faktur Pajak jika diperlukan customer
+* Mengelompokkan invoice yang diterima berdasarkan jadwal dari AR
+
+**[4] Kwitansi**
+
+
+* Menerima dokumen dari bagian admin, kemudian membuat kwitansi dan cetak
+* Kemudian diserahkan ke bagian admin kwitansi ```(5)```
+
+
+**[5] Admin Kwitansi**
+
+
+* Cek di list kwitansi kelengkapan dokumen
+* stempel dan pasang meterai
+
+
+**[6]  Kwitansi**
+
+
+* TTd Kwitansi
+* paraf di list kwitansi
+* bagikan ke bagian ```AR```
+
+
+
+
 
 ## Perbaikannya
 
@@ -60,14 +78,17 @@
 * Menerima dokumen DO dari bagian admin gudang
 * cek semua kelengkapan dokumen untuk syarat tagih ( berdasarkan ```jadwal tukarfaktur```)
 * Check list di sistem kelengkapan tersebut (```cnw-dolist```)
-* Scan dan ___Upload GR dan dokumen dari customer (DO asli)___ ke system (```cnw-dolist```)
+* Input dan atau ___Upload Nomor GR dari customer (DO asli)___ ke system (```cnw-dolist```)
 
 **Invoice**
 
 
 * Membuat invoice berdasarkan dokumen yang diberikan dari bagian admin
 * setelah selesai, bagian invoice akan print dokumen tersebut untuk digabungkan dengan dokumen  (DO )
-    * _jika status print invoice di business partner aktif_
+  
+      _jika status print invoice di business partner aktif_
+
+
 * Cek DO yang belum dibuatkan invoice/faktur berdasarkan ```jadwal tukar faktur```,jika dokumen penunjang (DO, GR, PO) tidak ada, maka segera minta bagian admin do untuk urus (```check status = request dok DO```)
 * Setelah menggabungkan dokumen DO dan invoice, dokumen tersebut di serahkan ke bagian kwitansi
 
