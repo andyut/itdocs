@@ -55,9 +55,9 @@
 
 
 
-
+---
 ## Perbaikannya
-
+---
 
 ### ALUR  
 
@@ -80,7 +80,13 @@
 * Check list di sistem kelengkapan tersebut (```cnw-dolist```)
 * Input dan atau ___Upload Nomor GR dari customer (DO asli)___ ke system (```cnw-dolist```)
 
-**Invoice**
+
+
+
+![skema1](img/arinv003.excalidraw.png)
+
+
+**[1] Invoice**
 
 
 * Membuat invoice berdasarkan dokumen yang diberikan dari bagian admin
@@ -88,39 +94,37 @@
   
       _jika status print invoice di business partner aktif_
 
+* Cek DO yang belum dibuatkan invoice/faktur berdasarkan ```jadwal tukar faktur```,jika dokumen penunjang (DO, GR, PO) tidak ada, maka segera minta bagian admin do untuk urus (```check status = request dok DO```)
+* Setelah menggabungkan dokumen DO dan invoice, dokumen tersebut di serahkan ke bagian admin
+
+
+**[2] Admin nvoice**
+
 
 * Cek DO yang belum dibuatkan invoice/faktur berdasarkan ```jadwal tukar faktur```,jika dokumen penunjang (DO, GR, PO) tidak ada, maka segera minta bagian admin do untuk urus (```check status = request dok DO```)
 * Setelah menggabungkan dokumen DO dan invoice, dokumen tersebut di serahkan ke bagian kwitansi
 
 
-**Admin Kwitansi**
+**[3] kwitansi Kwitansi**
 
-* Invoice yang diterima discan sebagai tanda terima invoice
-* Setelah discan, invoice dikelompok kan berdasarkan kategori
-  * Tukar Faktur
-  * Tidak Tukar Faktur
-  * Harian
-  * PIA
-  
+* Invoice yang diterima ```discan``` sebagai tanda terima invoice
+* Generate kwitansi per tanggal yang ditentupan
+* Print KIwitansi jika status ```print kwitansi ( Y / N)``` = Yes
+* TTd Kwitansi
 
 * jika ada jadwal tf dikelompokkan terlebih dahulu untuk jadwal besok hari ( dilihat di sistem list kwitansi-> jadwal tukar faktur) --> masuk ke kategori harian
 * jika tidak ada tukar faktur maka dipisahkan ke dalam box tidak tukar faktur
-* User kwitansi mengenerate otomatis kwitansi tidak berdasarkan customer, tetapi berdasarkan jadwal harian TF
+* Serahkan dokumen ke bagian kwitansi 
 
 > Contoh : untuk hari jumat, user kwitansi akan tekan tombol generate untuk jadwal jumat, dan memasukan _tanggal_. Maka sistem akan otomatis generate nomor kwitansi berdasarkan __invoice yang sudah di ceklist__ dikelompokkan berdasarkan _kode customer, Tipe cetakan( perkode customer atau per outlet)_.
 
-* User Kwitansi print kwitansi
-  * berdasarkan status print [Y/N] , jika tidak maka tetap tidak akan tercetak walau dimasukkan nomor kwitansinya
-* User kwitansi akan menggabungkan kwitansi dengan DO fakturnya.
-* User kwitansi akan print list kwitansi berdasarkan AR atau group yang di tentukan
-* User kwitansi akan ```mengurutkan dan mengelompokkan```  nomor kwitansi berdasarkan list kwitansi 
-* List kwitansi tersebut ditempel diatas gabungan kwitansi dan invoice
-* Semua dokumen setelah di tempel **list kwitansi** diserahkan ke bagian Admin invoice
 
-**Admin Invoice**
+**[4] Admin kwitansi**
 
-* Setelah menerima dokumen dari bagian kwitansi, dokumen tersebut di Stampel dan cek ulang kelengkapan dokumen berdasarkan list kwitansi
-* Menurutkan dokumen ke bagian AR ( sudah dikelompokkan per list kwitansi per AR)
+* Stempel kwitansi
+* Urutkan / kelompokkan dokumen tersebut berdasarkan AR person
+* check list di list kwitansi sebelum diturunkan KE AR
 
+ 
 
-
+ 
